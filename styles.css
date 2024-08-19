@@ -1,8 +1,7 @@
-
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    line-height: 1.7; /* Adjusted for better readability */
     color: #333;
     margin: 0;
     padding: 0;
@@ -73,18 +72,35 @@ header {
     margin-bottom: 20px;
 }
 
+/* Adding an image in the 'About Us' section */
+.about-us img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
 /* Menu Section */
 .menu {
     padding: 20px;
     background-color: #fff;
     margin: 20px auto;
     max-width: 800px;
+    text-align: center; /* Center the title */
 }
 
 .menu h2, .menu h3 {
     color: #444;
     margin-top: 20px;
     margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.menu h2 {
+    width: 800px; /* Set the width */
+    margin-left: auto; /* Center the element */
+    margin-right: auto; /* Center the element */
 }
 
 .menu-item {
@@ -97,10 +113,11 @@ header {
     margin-bottom: 5px;
 }
 
-.menu-item p {
-    margin: 0;
+.menu-description {
     font-size: 1em;
     color: #666;
+    line-height: 1.6; /* Adjusted line height for better readability */
+    margin: 0 0 10px 0;
 }
 
 /* Location Section */
@@ -136,3 +153,13 @@ footer {
     padding: 10px 0;
 }
 
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* General Spacing Adjustments */
+p, h2, h3, h4 {
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
