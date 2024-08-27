@@ -197,7 +197,7 @@ p, h2, h3, h4 {
 }
 
 /* Responsive Adjustments */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     .navbar {
         flex-direction: column;
     }
