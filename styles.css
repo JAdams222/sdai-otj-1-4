@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.7; /* Adjusted for better readability */
+    line-height: 1.7;
     color: #333;
     margin: 0;
     padding: 0;
@@ -86,7 +86,7 @@ header {
     background-color: #fff;
     margin: 20px auto;
     max-width: 800px;
-    text-align: center; /* Center the title */
+    text-align: center;
 }
 
 .menu h2, .menu h3 {
@@ -98,9 +98,8 @@ header {
 }
 
 .menu h2 {
-    width: 800px; /* Set the width */
-    margin-left: auto; /* Center the element */
-    margin-right: auto; /* Center the element */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu-item {
@@ -116,7 +115,7 @@ header {
 .menu-description {
     font-size: 1em;
     color: #666;
-    line-height: 1.6; /* Adjusted line height for better readability */
+    line-height: 1.6;
     margin: 0 0 10px 0;
 }
 
@@ -150,7 +149,20 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px;
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
 }
 
 footer a {
@@ -162,4 +174,48 @@ footer a {
 p, h2, h3, h4 {
     margin-bottom: 15px;
     padding: 0 10px;
+}
+
+/* Gallery Styles */
+.dev-favorites-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.dev-favorites-gallery img {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .menu h2, .menu h3 {
+        font-size: 1.8em;
+    }
+
+    .menu-item h4 {
+        font-size: 1.3em;
+    }
+
+    .footer-social-icons {
+        flex-direction: column;
+    }
+
+    .dev-favorites-gallery {
+        flex-direction: column;
+    }
 }
