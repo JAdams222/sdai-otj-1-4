@@ -166,4 +166,18 @@ header {
 .footer-socialmedia {
     display: flex;
     justify-content: center;
-   
+    align-items: center;
+    gap: 20px; /* Adjust the space between icons as needed */
+    margin-bottom: 10px;
+}
+
+.footer-icon {
+    width: 40px;  /* Set a consistent width for the icons */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.footer-icon:hover {
+    opacity: 0.8; /* Slightly dim the icon on hover */
+    transition: opacity 0.3s ease;
+}
+
